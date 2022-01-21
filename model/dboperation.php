@@ -2,7 +2,7 @@
 
 //database settings
 $database_host 			= 'localhost';
-$database_username 		= 'admin';
+$database_username 		= 'root';
 $database_password 		= '9020';
 $database_name 			= 'multiecom';
 

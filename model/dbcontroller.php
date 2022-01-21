@@ -1,7 +1,7 @@
 <?php
 class DBController {
 	private $host = "localhost";
-	private $user = "admin";
+	private $user = "root";
 	private $password = "9020";
 	private $database = "multiecom";
 	private $conn;
