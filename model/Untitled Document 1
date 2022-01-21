@@ -1,0 +1,36 @@
+ <div class="row">
+                <div class="col-6">
+                    <div class="card product-card">
+                        <div class="card-body">
+                            <img src="assets/img/sample/photo/product1.jpg" class="image" alt="product image">
+                            <h2 class="title">Apple</h2>
+                            <p class="text">1 kg</p>
+                            <div class="price">$ 1.50</div>
+                            <a href="#" class="btn btn-sm btn-primary btn-block">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card product-card">
+                        <div class="card-body">
+                            <img src="assets/img/sample/photo/product4.jpg" class="image" alt="product image">
+                            <h2 class="title">Beetroot</h2>
+                            <p class="text">1 piece</p>
+                            <div class="price">$ 4.99</div>
+                            <a href="#" class="btn btn-sm btn-primary btn-block">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <?php      /*          
+ $query = "SELECT * FROM pro_details WHERE prod_name  LIKE '%".$prod_name."%' AND '%".$prod_name."%' ORDER BY city_name ASC";
+$result = $mysqli->query($sqi); */ 
+?>
+
+
+SELLER NAME ADD PRO LIST 
+
+https://www.py4u.net/discuss/996560
