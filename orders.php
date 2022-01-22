@@ -83,7 +83,7 @@ $storeids=$_SESSION['fk_id'];
                             </div>
                             <ul class="listview">
 <?php
-$sqi="SELECT id,order_id, qty, product_price, product_image, seller_id FROM order_details WHERE seller_id='$storeids' ORDER BY id DESC";
+$sqi="SELECT id,order_id,order_date,qty,product_price,product_image,seller_id FROM order_details WHERE seller_id='$storeids' ORDER BY id DESC";
 
 $result = $mysqli->query($sqi);
 if (!empty($result) && $result->num_rows > 0) {
@@ -91,7 +91,7 @@ if (!empty($result) && $result->num_rows > 0) {
 while($row = $result->fetch_assoc()) {
 ?> 
                                 <li>
-                        <a onclick="document.location='order-details.php?sa=<?php echo $row['order_id'] ?>'">
+                        <a onclick="document.location='order-detail.php?sa=<?php echo $row['order_id'] ?>'">
                                         <div class="card cart-item">
                                             <div class="card-body">
                                                 <div class="in">
@@ -101,7 +101,7 @@ while($row = $result->fetch_assoc()) {
                                         <p class="text-muted">Order# :<?php echo $row['order_id'] ?></p>
                                                         <p class="detail"><?php echo $row['qty'] ?> Items</p>
                                          <strong class="price">$ <?php echo $row['product_price'] ?> </strong>
-                                                        <p class="detail">2021-01-02,05:45 PM</p>
+                                                        <p class="detail"><?php echo $row['order_date'] ?></p>
                                                     </div>
                                                 </div>
 

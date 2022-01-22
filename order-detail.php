@@ -125,9 +125,15 @@ while($row = $result->fetch_assoc()) {
 
                                 <div class="invoice-total mt-4">
                                     <ul class="listview transparent simple-listview">
-                                        <li>Order total <span class="hightext">$130.00</span></li>
+                                        <li>Order total <span class="hightext">$<?php echo $total_price;?></span></li>
                                         <li>Delivery Fee<span class="hightext">$70.00</span></li>
-                                        <li>Grand Total<span class="totaltext text-primary">$200.00</span></li>
+                                        <li>Grand Total<span class="totaltext text-primary">
+<?php  
+$total_price += 70;
+echo $total_price;
+?>  
+                                    
+                                    </span></li>
                                     </ul>
                                 </div>
 
